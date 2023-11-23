@@ -2,7 +2,7 @@ FROM oven/bun
 
 WORKDIR /app
 
-ENV TOKEN=$TOKEN
+ENV TOKEN=YOUR_BOT_TOKEN
 
 COPY package.json .
 RUN bun install
