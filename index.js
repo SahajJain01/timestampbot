@@ -14,7 +14,7 @@ bot.on('ready', () => {
     )
     .addStringOption(option =>
       option.setName('timezone')
-        .setDescription('The timezone in the format Continent/City')
+        .setDescription('Your local timezone.')
         .setRequired(true)
         .addChoices(
           { name: 'PST - Pacific Standard Time', value: 'UTC-8' },
