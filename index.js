@@ -54,7 +54,7 @@ bot.on('interactionCreate', async (interaction) => {
       const dateTime = DateTime.fromFormat(timeString, 'HH:mm', { zone: timezoneString });
       const utcTimestamp = dateTime.setZone('UTC').toUnixInteger();
 
-      await interaction.reply({ content: `<t:${utcTimestamp}:t> -> \\<t:${utcTimestamp}:t>\n<t:${utcTimestamp}:R> -> \\<t:${utcTimestamp}:R>`, ephemeral: true });
+      await interaction.reply({ content: `<t:${utcTimestamp}:t> ->   \\<t:${utcTimestamp}:t>\n<t:${utcTimestamp}:R> ->   \\<t:${utcTimestamp}:R>`, ephemeral: true });
     } catch (error) {
       await interaction.reply({ content: 'Invalid time format. Please provide the time in the format HH:MM' + error, ephemeral: true });
     }
@@ -67,7 +67,7 @@ bot.on('interactionCreate', async (interaction) => {
       const currentDateTime = DateTime.utc();
       const utcTimestamp = currentDateTime.plus({ hours: hours, minutes: minutes }).toUnixInteger();
 
-      await interaction.reply({ content: `\\<t:${utcTimestamp}:t> \\<t:${utcTimestamp}:R>`, ephemeral: true });
+      await interaction.reply({ content: `<t:${utcTimestamp}:t> ->   \\<t:${utcTimestamp}:t>\n<t:${utcTimestamp}:R> ->   \\<t:${utcTimestamp}:R>`, ephemeral: true });
     } catch (error) {
       await interaction.reply({ content: 'Invalid time format. Please provide the time in the format HH:MM.' + error, ephemeral: true });
     }
