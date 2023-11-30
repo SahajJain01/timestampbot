@@ -20,6 +20,7 @@ bot.on('ready', () => {
           { name: 'PST - Pacific Standard Time', value: 'UTC-8' },
           { name: 'MST - Mountain Standard Time', value: 'UTC-7' },
           { name: 'CST - Central Standard Time', value: 'UTC-6' },
+          { name: 'EST - Easter Standard Time', value: 'UTC-5' },
           { name: 'CET - Central European Time', value: 'UTC+1' },
           { name: 'EET - Eastern European Time', value: 'UTC+2' },
           { name: 'WET - Western European Time', value: 'UTC+0' },
